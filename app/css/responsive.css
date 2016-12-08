@@ -1,0 +1,118 @@
+/*==========  Desktop First Method  ========== */
+.best_traiders .traiders.units { box-sizing: border-box; }
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) { .hidden_header_buttons { display: none; }
+  .options_text_first_screen { padding-top: 80px; }
+  .options_text_first_screen:before { position: static; display: inline-block; vertical-align: middle; }
+  .options_text_first_screen .h1_bg_wrap { text-align: center; padding: 70px 20px 10px; }
+  .options_text_first_screen .h1_bg_wrap img { max-width: 100%; }
+  .options_text_first_screen:after { width: 200px; height: 200px; top: 20px; background-size: contain; left: 50%; margin-left: -100px; }
+  .container { width: 100% !important; max-width: 1180px; box-sizing: border-box; }
+  .payment_items .left { float: none; margin-bottom: 30px; }
+  .payment_items .right { float: none; }
+  .question_units_block_in_header .left_question_side { width: 100%; max-width: none; display: block; right: 0; top: 0; }
+  .the_plate_item_in_questions_block_animated { left: 5%; width: 90%; top: 450px; margin-left: 0; }
+  .right_side_content_questions:before, .right_side_content_questions:after { border: 30px solid transparent; border-bottom: 15px solid #357BAE; bottom: 100%; left: 50%; margin-left: -30px; margin-top: 0; top: auto; right: auto; }
+  .right_side_content_questions:after { border-bottom: 15px solid #fff; margin-bottom: -4px; }
+  .right_side_content_questions.orange_border:before, .right_side_content_questions.orange_border:after { border: 30px solid transparent; border-bottom: 20px solid #FF7F00; }
+  .right_side_content_questions.orange_border:after { border-bottom: 20px solid #fff; }
+  .right_side_content_questions.green_border:before, .right_side_content_questions.green_border:after { border: 30px solid transparent; border-bottom: 20px solid #5FCA22; }
+  .right_side_content_questions.green_border:after { border-bottom: 20px solid #fff; } }
+/* Medium Devices, Desktops */
+@media screen and (max-width: 992px) { .best_traiders .the_trade_active { font-size: 18px; }
+  .best_traiders .field_title, .best_traiders .location { font-size: 12px; }
+  .best_traiders .the_name { font-size: 20px; }
+  .best_traiders .capital { font-size: 40px; }
+  .best_traiders .the_updated { font-size: 20px; }
+  .best_traiders .traiders.units { padding: 0 10px; }
+  .footer_menu li { display: inline-block; padding: 0 1%; }
+  .footer .footer_links { width: 100%; float: none; }
+  .footer .footer_about_us { width: 75%; }
+  .best_traiders { min-height: 800px; background: transparent url("../images/tablebg.jpg") repeat scroll 0px 0px; }
+  .question_units_block_in_header .pop_title { font-size: 24px; margin-bottom: 20px; }
+  .questions_progress_bar { margin-bottom: 20px; }
+  .questions_progress_bar > .dib { width: 30px; height: 30px; margin-right: 50px; line-height: 30px; font-size: 24px; }
+  .questions_progress_bar > .dib:after { width: 60px; }
+  .long_green_btn, .long_gray_btn, .long_orange_btn { width: 100px; }
+  .the_plate_item_in_questions_block_animated { top: 320px; }
+  .traider_rent { padding-bottom: 250px; }
+  .traider_rent .traider_rent_wrap { text-align: center; padding-left: 0; margin-bottom: 40px; }
+  .traider_rent:after { margin-left: -180px; }
+  .first_menu_lvl { width: 100%; padding: 0 0 10px; }
+  .back_link_style { display: block; }
+  .first_menu_lvl--item, .first_menu_lvl--item:hover { display: block; width: auto; text-align: left; background: transparent; }
+  .first_menu_lvl--item .submenu--lvl2, .first_menu_lvl--item:hover .submenu--lvl2 { display: none; }
+  .first_menu_lvl--item a { border-bottom: 1px solid #3c73b4; }
+  .first_menu_lvl--item:last-child a { border-bottom: none; }
+  .first_menu_lvl--item:hover .submenu--lvl2 { display: none; }
+  .submenu--lvl2, .submenu--lvl2:hover, .third_lvl3, .third_lvl3:hover { background: transparent; }
+  .submenu--lvl2--item { background: transparent; }
+  .submenu--lvl2--item:hover .third_lvl3 { display: none; }
+  .header_menu { width: 80%; left: 10%; top: auto; bottom: -3px; }
+  .header_menu.active { top: 100%; bottom: auto; }
+  .header_menu.pad_sub_activated a { display: none; }
+  .header_menu .pad_sub_activate_element .submenu--lvl2 { display: block; position: static; background: transparent; }
+  .header_menu .pad_sub_activate_element .submenu--lvl2 a { display: block; }
+  .header_menu.third_lvl_activated .submenu--lvl2 a { display: none; }
+  .header_menu.third_lvl_activated .submenu--lvl2 > .back_link_style { display: none; }
+  .header_menu.third_lvl_activated .submenu--lvl2--item:hover { background: none; }
+  .header_menu.third_lvl_activated .third_lvl_active_element .third_lvl3 { display: block; position: static; }
+  .header_menu.third_lvl_activated .third_lvl_active_element .third_lvl3 a { display: block; }
+  .has_inside_menu_style > a { position: relative; }
+  .has_inside_menu_style > a:after { content: ""; display: inline-block; position: absolute; background: url(../images/menu_arrow.png) center center no-repeat; width: 8px; height: 16px; vertical-align: middle; top: 50%; margin-top: -8px; right: 10px; } }
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) { .count_your_profit { padding-bottom: 20px; }
+  .how_to_increase { height: 650px; }
+  .how_to_increase:after { height: 450px; background-size: cover; }
+  .how_to_increase .small_title { font-size: 20px; }
+  .logo_meta_text { display: none; }
+  .block_title { font-size: 28px; }
+  .meta_traider_bl { padding-left: 0; }
+  .larson_logo { width: 50px; padding-left: 10px; overflow: hidden; }
+  .count_your_profit .left, .count_your_profit .right { float: none; width: 100%; }
+  .count_your_profit .sliders_block { padding: 30px 25px; margin-bottom: 100px; }
+  .count_your_profit .sliders_block:after, .count_your_profit .sliders_block:before { display: none; }
+  .we_transfered .units { font-size: 0; text-align: center; }
+  .we_transfered .item { float: none; display: block; vertical-align: top; margin-bottom: 25px; width: auto; }
+  .we_transfered .text_description { font-size: 20px; }
+  .we_transfered .text_description.one_line { padding-top: 0 !important; }
+  .we_transfered .count_line { font-size: 40px; }
+  .we_transfered .icon { margin-bottom: 10px; }
+  .best_traiders .tr { display: block; width: 100%; font-size: 0; }
+  .best_traiders .tr:nth-child(2n) { background: rgba(255, 255, 255, 0.2); }
+  .best_traiders .tr:last-child .td { border-bottom: 1px solid #2B405B; }
+  .best_traiders .td { display: block; width: 100%; box-sizing: border-box; border-right: 0; }
+  .best_traiders .td.updated, .best_traiders .td.name, .best_traiders .td.number, .best_traiders .td.instruments, .best_traiders .td.trade_active { text-align: center; width: 100%; }
+  .best_traiders .td.number { width: 100%; }
+  .best_traiders .td.number span { margin: 0 auto; }
+  .best_traiders .td .the_instrument { font-size: 14px; }
+  .how_to_get_money:after { display: none; }
+  .how_to_get_money .block_content { padding: 75px 20px; }
+  .footer .footer_about_us, .footer .contacts_block { width: 100%; float: none; margin: 0 0 20px; }
+  .right_side_content_questions.question_step_3 .buttons_wrap { text-align: center; }
+  .right_side_content_questions.question_step_3 .buttons_wrap .left { float: none; margin-bottom: 10px; }
+  .right_side_content_questions.question_step_3 .buttons_wrap .right { float: none; }
+  .icons_description_questions .item { width: 48%; }
+  .right_side_content_questions .container_box { padding: 15px; }
+  .videos_block .block_title { min-height: 0; margin-bottom: 20px; }
+  .videos_block .left, .videos_block .right { float: none; display: block; width: 100%; text-align: center; }
+  .videos_block .left { margin-bottom: 40px; } }
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 630px) { .video_block { width: 90%; left: 5%; margin-left: 0; }
+  .video_block .close_popup { left: auto; right: 0; }
+  .right_side_content_questions .buttons_wrap .left, .right_side_content_questions .buttons_wrap .right { float: none; }
+  .right_side_content_questions .buttons_wrap .left { margin-bottom: 10px; } }
+@media only screen and (max-width: 480px) { .profit_up_to { font-size: 42px; }
+  .blue_btn_q, .blue_btn_q.empty { padding-left: 10px; padding-right: 10px; }
+  .icons_description_questions .item { width: 100%; }
+  .how_to_increase { height: 500px; }
+  .how_to_increase:after { height: 350px; }
+  .count_your_profit .sliders_block { padding: 10px 5px; }
+  .count_your_profit .sliders_block .slider_scale .dib { padding: 5px; width: 10%; }
+  .count_your_profit .sliders_block .slider_scale .dib:nth-child(odd) { display: none; }
+  .count_your_profit .sliders_block .slider_scale .dib:first-child { display: block; }
+  .how_to_get_money .left, .how_to_get_money .right { text-align: center; width: 100%; float: none; }
+  .how_to_get_money .right { margin-top: 25px; }
+  .how_to_get_money .payment_wrap { margin-bottom: 10px; }
+  .faq .faq_units { padding: 0 20px; } }

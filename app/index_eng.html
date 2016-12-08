@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Binary Options in the Meta Trader 4 - Larson &amp; Holz</title>
+    <meta name="Description" content="" />
+    <meta name="Keywords" content="Binary options mt4" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+    <div class="main_wrapper">
+        <div class="head_line">
+            <div class="inner_head_line_wrap">
+                <div class="container clearfix">
+                    <div class="left">
+                        <div class="meta_traider_bl dib vam">
+                            <i class="icon dib vam meta-trader"></i>
+                            <div class="dib vam logo_meta_text">
+                                <p>Meta Trader 4</p>
+                                <p>Binary Options from</p>
+                            </div>
+                        </div>
+                        <div class="larson_logo dib vam">
+                            <a href="/"><img src="images/logo.png" alt=""></a>
+                        </div>
+                    </div>
+                    <a class='right language_toggle' href="https://lh-broker.ru/options/">ru</a>
+                    <div class="hidden_header_buttons hidden">
+                        <a class="blue_btn_q ttu white_text filled download_addon" href="/download/Larson.FxLite-MT4.Setup.4.29.0.exe" target="_blank"><i class="icon icon-download"></i> Download ADD-ON</a>
+                        <a class="tac orange_btn empty" href="/open_an_account_2/?serviceId=3" target="_blank">Open an account</a>
+                        <a class="blue_btn_q empty download_mtr_button blue_btn_empty ttu" href="http://files.metaquotes.net/larson.and.holz/mt4/larson4setup.exe" target="_blank"><i class="icon meta-trader small no-border"></i> Download meta trader 4</a>
+                    </div>
+                    <div class="right header_botton_go">
+                        <a href="#" class="blue_btn" data-call-questions>Lets start!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header_menu">
+                <ul class="first_menu_lvl">
+                    <li class="first_menu_lvl--item">
+                        <a href="/about_the_company_1/" target="_blank">About Us</a>
+                    </li>
+                    <li class="has_sub first_menu_lvl--item has_inside_menu_style">
+                        <a href="/services_1/" target="_blank">Services</a>
+                        <ul class="submenu submenu--lvl2">
+                            <li class="submenu--lvl2--item"><a href="/services_1/" target="_blank">Classic</a></li>
+                            <li class="submenu--lvl2--item"><a href="/options/" target="_blank">Options</a></li>
+                            <li class="submenu--lvl2--item"><a href="/rating_4/" target="_blank">CopyDeal</a></li>
+                            <li class="submenu--lvl2--item"><a href="https://ndd.lh-broker.com/services_1/" target="_blank">NDD</a></li>
+                            <li class="submenu--lvl2--item"><a href="/rating_1/" target="_blank">Network</a></li>
+                            <li class="submenu--lvl2--item back_link back_link_style"><span>Back</span></li>
+                        </ul>
+                    </li>
+                    <li class="has_sub first_menu_lvl--item has_inside_menu_style">
+                        <a href="/open_an_account_1/" target="_blank">Open an account</a>
+                        <ul class="submenu submenu--lvl2">
+                            <li class="submenu--lvl2--item"><a href="/open_an_account_1/" target="_blank">Start</a></li>
+                            <li class="submenu--lvl2--item"><a href="/open_an_account_2c/" target="_blank">Real</a></li>
+                            <li class="submenu--lvl2--item"><a href="/NonDepositregistration/" target="_blank">Non-Deposit</a></li>
+                            <li class="submenu--lvl2--item"><a href="/FreeDemoregistration/" target="_blank">Demo</a></li>
+                            <li class="submenu--lvl2--item"><a href="/monthly_contest/" target="_blank">Contest</a></li>
+                            <li class="submenu--lvl2--item back_link back_link_style"><span>Back</span></li>
+                        </ul>
+                    </li>
+                    <li class="has_sub first_menu_lvl--item has_inside_menu_style">
+                        <a href="/account_management_1/" target="_blank">Client's Area</a>
+                        <ul class="submenu submenu--lvl2">
+                            <li class="submenu--lvl2--item"><a href="/account_management_1/" target="_blank">Log-in</a></li>
+                            <li class="submenu--lvl2--item"><a href="/logout/" target="_blank">Log-out</a></li>
+                            <li class="submenu--lvl2--item back_link back_link_style"><span>Back</span></li>
+                        </ul>
+                    </li>
+                    <li class="has_sub first_menu_lvl--item has_inside_menu_style">
+                        <a href="/bank/RateStreamer/" target="_blank">Metatrader</a>
+                        <ul class="submenu submenu--lvl2">
+                            <li class="submenu--lvl2--item"><a href="/Mobile_Trading/" target="_blank">Android</a></li>
+                            <li class="submenu--lvl2--item"><a href="/Mobile_Trading/" target="_blank">Apple</a></li>
+                            <li class="submenu--lvl2--item"><a href="/bank/RateStreamer/" target="_blank">Windows</a></li>
+                            <li class="submenu--lvl2--item back_link back_link_style"><span>Back</span></li>
+                        </ul>
+                    </li>
+                    <li class="has_sub first_menu_lvl--item has_inside_menu_style">
+                        <a href="/partnership_1/" target="_blank">Partnership</a>
+                        <ul class="submenu submenu--lvl2">
+                            <li class="submenu--lvl2--item"><a href="/partnership_3/" target="_blank">On-line</a></li>
+                            <li class="submenu--lvl2--item"><a href="/partnership_1/" target="_blank">Off-line</a></li>
+                            <li class="submenu--lvl2--item back_link back_link_style"><span>Back</span></li>
+                        </ul>
+                    </li>
+                    <li class="has_sub first_menu_lvl--item has_inside_menu_style">
+                        <a href="/FOREXFamily/" target="_blank">Forex Family</a>
+                        <ul class="submenu submenu--lvl2">
+                            <li class="submenu--lvl2--item"><a href="/zerospread/" target="_blank">Market Spreads</a></li>
+                            <li class="submenu--lvl2--item"><a href="/NonDepositregistration/" target="_blank">Trading Instruments</a></li>
+                            <li class="submenu--lvl2--item"><a href="/interestrate10/" target="_blank">Interest Rate Accrual</a></li>
+                            <!-- <li class="submenu--lvl2--item"><a href="/leverage/" target="_blank">Плечо до 1:500</a></li> -->
+                            <li class="submenu--lvl2--item"><a href="/payment-info/" target="_blank">Instant Deposit</a></li>
+                            <li class="submenu--lvl2--item"><a href="/market_execution/" target="_blank">Market Execution</a></li>
+                            <li class="submenu--lvl2--item"><a href="/online_withdrawal/" target="_blank">On-Line Withdrawal</a></li>
+                            <li class="submenu--lvl2--item"><a href="/Bonuses/" target="_blank">Bonus Programs</a></li>
+                            <li class="submenu--lvl2--item"><a href="/no_swap/" target="_blank">Islamc Accounts</a></li>
+                            <li class="submenu--lvl2--item"><a href="/partership/" target="_blank">Partnership</a></li>
+                            <li class="submenu--lvl2--item"><a href="/rating_1/" target="_blank">Social Network</a></li>
+                            <li class="submenu--lvl2--item"><a href="https://ndd.lh-broker.com/" target="_blank">NDD service</a></li>
+                            <li class="submenu--lvl2--item"><a href="/rating_4/" target="_blank">Copy Deals</a></li>
+                            <li class="submenu--lvl2--item back_link back_link_style"><span>Back</span></li>
+                        </ul>
+                    </li>
+                    <li class="has_sub first_menu_lvl--item has_inside_menu_style">
+                        <a href="/news/" target="_blank">News</a>
+                        <ul class="submenu submenu--lvl2">
+                            <li class="submenu--lvl2--item"><a href="/news/" target="_blank">News</a></li>
+                            <li class="submenu--lvl2--item"><a href="/businessnews/" target="_blank">Business news</a></li>
+                            <li class="submenu--lvl2--item"><a href="/Larson_holz_news/" target="_blank">L&amp;H news</a></li>
+                            <li class="submenu--lvl2--item back_link back_link_style"><span>Back</span></li>
+                        </ul>
+                    </li>
+                    <li class="first_menu_lvl--item"><a href="/faq_1/" target="_blank">FAQ</a></li>
+                </ul>
+                <div class="menu_icon"></div>
+            </div>
+        </div>
+        <div class="header tac">
+            <div class="first-screen-will-be-hidden-on-question-show">
+                <div class="container">
+                    <div class="options_text_first_screen en">
+                        <div class="h1_bg_wrap">
+                            <img src="images/bin_option_title_en.png" alt="">
+                        </div>
+                    </div>
+                    <p class="tac ttu profit_up_to">Profitability up <span>to 99%</span></p>
+                    <p class="go_btn"><a href="#" class="blue_btn" data-call-questions>Lets start!</a></p>
+                </div>
+            </div>
+
+            <!-- BEGIN questions_items_the_questions -->
+            <div class="questions_items_the_questions question_units_block_in_header">
+                <div class="question_item_will_move full_width_first_question" data-question-number="1">
+                    <p class="ttu pop_title">THREE SIMPLE QUESTIONS TO BEGIN</p>
+                    <div class="questions_progress_bar">
+                        <div class="dib vam active">1</div>
+                        <div class="dib vam">2</div>
+                        <div class="dib vam">3</div>
+                    </div>
+                    <div class="the_question">Do You have Ever Traded Binary Options?</div>
+                    <div class="answers">
+                        <a data-call-question="2" data-call-plate="1" href="#" class="long_green_btn">Yes</a>
+                        <a data-call-question="2" data-call-plate="3" href="#" class="long_orange_btn">No</a>
+                    </div>
+                </div>
+                <div class="left_question_side question_item_will_move" data-question-number="2">
+                    <p class="ttu pop_title">For Those in the Know</p>
+                    <div class="questions_progress_bar">
+                        <div class="dib vam active active_line">1</div>
+                        <div class="dib vam active">2</div>
+                        <div class="dib vam">3</div>
+                    </div>
+                    <div class="the_question">Do you already have the account with Larson&amp;Holz?</div>
+                    <div class="answers">
+                        <a href="#" data-call-question="3" data-call-plate="7" class="long_green_btn">Yes</a>
+                        <a href="#" data-call-question="3" data-call-plate="5" class="long_orange_btn">No</a>
+                    </div>
+                </div>
+                <div class="left_question_side question_item_will_move" data-question-number="3">
+                    <p class="ttu pop_title">For Those in the Know</p>
+                    <div class="questions_progress_bar">
+                        <div class="dib vam active active_line">1</div>
+                        <div class="dib vam active active_line">2</div>
+                        <div class="dib vam active">3</div>
+                    </div>
+                    <div class="the_question">Have you already installed MetaTrader4?</div>
+                    <div class="answers">
+                        <a data-call-question="null" data-call-plate="2" href="#" class="long_green_btn">Yes</a>
+                        <a data-call-question="null" data-call-plate="4" href="#" class="long_orange_btn">No</a>
+                    </div>
+                </div>
+            </div>
+            <!-- // END questions_items_the_questions -->
+
+            <!-- BEGIN question_plates_block_the_plates -->
+            <div class="question_plates_block_the_plates">
+                <div class="right_side_content_questions the_plate_item_in_questions_block_animated orange_border" data-question-plate-moving="1">
+                    <div class="container_box">
+                        <p class="ttl">See true value of the advanced offer for professional</p>
+                        <div class="description_questions">
+                            <p>You have tried Trading Binary Options, haven’t you? Then you surely appreciate in value all advantages of Larson&amp;Holz offer.</p>
+                            <p>We propose advanced trading with MetaTrader4. That means that you get access to all instruments including analytics and of course it will make you trading profitable. On top of that Larson&amp;Holz offers:</p>
+                        </div>
+                    </div>
+                    <div class="container_box gray_bg">
+                        <div class="icons_description_questions">
+                            <div class="units clearfix">
+                                <div class="item">
+                                    <i class="icon icon-blue-coins"></i>
+                                    <p class="bl-icon-title">99%</p>
+                                    <p class="bl-icon-descr">Profitability up to 99%</p>
+                                </div>
+                                <div class="item">
+                                    <i class="icon icon-blue-money"></i>
+                                    <p class="bl-icon-title">9 USD</p>
+                                    <p class="bl-icon-descr">Minimum deposit 9 USD</p>
+                                </div>
+                                <div class="item">
+                                    <i class="icon icon-blue-hummer"></i>
+                                    <p class="bl-icon-title">9 USD</p>
+                                    <p class="bl-icon-descr">Smallest position 9 USD</p>
+                                </div>
+                                <div class="item">
+                                    <i class="icon icon-blue-exchange"></i>
+                                    <p class="bl-icon-title">>70</p>
+                                    <p class="bl-icon-descr">More than 70 instruments for trading</p>
+                                </div>
+                                <div class="item">
+                                    <i class="icon icon-blue-clock"></i>
+                                    <p class="bl-icon-title">Safety</p>
+                                    <p class="bl-icon-descr whsnw">Simple and safe<br> withdrawal process</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right_side_content_questions the_plate_item_in_questions_block_animated orange_border" data-question-plate-moving="7">
+                    <div class="container_box">
+                        <p class="ttl mb0 big_paddings">Proceed with the next question</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right_side_content_questions the_plate_item_in_questions_block_animated blue_border question_step_3" data-question-plate-moving="2">
+                <div class="container_box">
+                    <p class="ttl">You are in one step from successful trading. Do it.</p>
+                    <div class="description_questions mb10">
+                        Larson&amp;Holz developed customized add-on that allows using Metatrader4 for Binary Options trading. Now you may trade, using all MT4 advantages including all trading instruments and analytics. As a result you have a chance to make perfect forecast.
+                    </div>
+                    <ul class="steps_list">
+                        <li class="item">
+                            <div class="number">1</div>
+                            <div class="list_ttl">Download and install Add-on for Binary Options</div>
+                        </li>
+                        <li class="item">
+                            <div class="number">2</div>
+                            <div class="list_ttl">
+                                In MT-4 choose the instrument with partial BO. <a class="blue_link" data-call-popup="sample_popup" href="#">See example.</a>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="number">3</div>
+                            <div class="list_ttl">Everything is ready. Start Trading.</div>
+                        </li>
+                    </ul>
+                    <div class="buttons_wrap clearfix">
+                        <div class="left">
+                            <a class="blue_btn_q ttu white_text filled download_addon" href="/download/Larson.FxLite-MT4.Setup.4.29.0.exe" target="_blank"><i class="icon icon-download"></i> Download and install Add-On</a>
+                        </div>
+                        <div class="right">
+                            <a class="blue_btn_q empty ttu" href="/download/LH-binary-options-tutorial-eng.pdf" target="_blank">Download instruction</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right_side_content_questions the_plate_item_in_questions_block_animated green_border question_step_4" data-question-plate-moving="3">
+                <div class="container_box">
+                    <div class="description_question ttl">
+                        Take the unique opportunity for the successful start.
+                    </div>
+                    <div class="block_quot">
+                        It is very simple: in binary options trades based on whether the price will go up or down. Suppose you predict the EUR/USD will go down in the next few minutes. In case the price will lower if even 0,1 points <span class="orange_text">you get profit</span>. Vice verse if the price will go up, your losses are limited by your placement.
+                    </div>
+                    <div class="description_question">
+                        Larson&amp;Holz offers best conditions for the profitable start:
+                    </div>
+                    <ul class="list_with_logo">
+                        <li>Free Demo account for <strong>USD 10000</strong></li>
+                        <li>Profitability up to <strong>99%</strong></li>
+                        <li>Minimum deposit from <strong>9 USD</strong></li>
+                        <li>Smallest position from <strong>9 USD</strong></li>
+                        <li>Expiration time from 60 sec</li>
+                        <li>Trading on simple and well-known Meta Trader4 platform</li>
+                        <li>Simple and Safe withdrawal methods</li>
+                    </ul>
+                    <!-- <div class="our_rules ttu">Наши торговые условия:</div> -->
+                    <div class="watch_video"><a data-call-popup="video_popup" href="#"><span class="video_icon"></span> WATCH VIDEO!</a></div>
+                </div>
+                <!-- <div class="container_box gray_bg">
+                        <ul class="rules_block clearfix">
+                            <li>
+                                <div class="number">1.</div>
+                                <div class="descr">
+                                    Выберите <br>базовый ASSET
+                                </div>
+                            </li>
+                            <li>
+                                <div class="number">2.</div>
+                                <div class="descr">
+                                    Выберите <br> сумму сделки
+                                </div>
+                            </li>
+                            <li>
+                                <div class="number">3.</div>
+                                <div class="descr">
+                                    Определите, куда <br> пойдет цена
+                                </div>
+                            </li>
+                        </ul>
+                    </div> -->
+            </div>
+            <div class="right_side_content_questions the_plate_item_in_questions_block_animated blue_border question_step_5" data-question-plate-moving="4">
+                <div class="container_box">
+                    <p class="ttl">Take new advantages</p>
+                    <div class="mtr_header">
+                        <div class="dib vam mtr_logo">
+                            <img src="images/mtr_ic_q.jpg" alt="">
+                        </div>
+                        <div class="dib vam mtr_descr">
+                            <p>The most popular Forex trading platform</p>
+                        </div>
+                    </div>
+                    <div class="content_with_borders">
+                        <p>MetaTrader4 platform was tested by billions of traders all over the world and was regarded as the most comfortable terminal for CFD and Forex trading. It is on the most popular instruments.</p>
+                        <p class="download_mtr_button_wrap">
+                            <a class="blue_btn_q empty download_mtr_button blue_btn_empty ttu" href="http://files.metaquotes.net/larson.and.holz/mt4/larson4setup.exe" target="_blank"><i class="icon meta-trader small no-border"></i> Download and install Metatrader4</a>
+                        </p>
+                        <p>Nowadays we have expanded its’ capabilities - today you can trade Binary Options directly from MetaTrader4. Developed by Larson and Holz tailor-made Add-on makes it possible.</p>
+                    </div>
+                    <div class="for_get_next_step">
+                        <p>Take two simple steps towards the successful trading</p>
+                    </div>
+                    <div class="buttons_wrap clearfix">
+                        <p class="left">
+                            <a class="blue_btn_q ttu white_text filled download_addon" href="/download/Larson.FxLite-MT4.Setup.4.29.0.exe" target="_blank"><i class="icon icon-download"></i>Download Add-On</a>
+                        </p>
+                        <p class="right">
+                            <a class="blue_btn_q empty ttu" href="/download/LH-binary-options-tutorial.pdf" target="_blank">Download instruction</a>
+                        </p>
+                    </div>
+                    <p class="now_start_to_earn ttl">Start to earn profit!</p>
+                </div>
+            </div>
+            <div class="right_side_content_questions the_plate_item_in_questions_block_animated blue_border question_step_6" data-question-plate-moving="5">
+                <div class="container_box">
+                    <p class="ttl">Then it is high time to do it and to start earning together with the well-known company!</p>
+                    <div class="description_question">
+                        To do so open the account right now and in 3 minutes get access to all advantages on trading Binary Options with.
+                    </div>
+                </div>
+                <div class="container_box gray_bg">
+                    <div class="btsn_wrapper">
+                        <p class="btn_line">
+                            <a class="tac blue_btn db" href="/FreeDemoregistration/" target="_blank">Free demo account for USD 1000</a>
+                        </p>
+                        <p class="btn_line">
+                            <a class="tac orange_btn db empty" href="/open_an_account_2/?serviceId=3" target="_blank">Trade on the real money</a>
+                        </p>
+                        <div class="small_descr_text tac">
+                            <p>Upon registration you will</p>
+                            <p>receive further instructions via e-mail</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // END question_plates_block_the_plates -->
+        <div class="how_to_increase en">
+            <div class="container">
+                <h2 class="block_title ttu ffb">How to up the deposit 10 times in 4 trades</h2>
+                <p class="small_title">For major currency pairs there are up <br>to 10 favorable trading moments per hour.</p>
+                <div class="diargamm_block"></div>
+            </div>
+        </div>
+        <div class="count_your_profit">
+            <div class="container clearfix">
+                <p class="tac ttu block_title">Calculate you potential gain</p>
+                <div class="left sliders_block">
+                    <div class="units">
+                        <div class="item start_money clearfix">
+                            <div class="left_pos_slider">
+                                <p class="slider_title">Initial deal value <span>($)</span></p>
+                                <div class="the_slider blue" data-min="1" data-max="100" data-cur="75"></div>
+                                <div class="slider_scale">
+                                    <div class="dib vam">1</div>
+                                    <div class="dib vam">10</div>
+                                    <div class="dib vam">20</div>
+                                    <div class="dib vam">30</div>
+                                    <div class="dib vam">40</div>
+                                    <div class="dib vam">50</div>
+                                    <div class="dib vam">60</div>
+                                    <div class="dib vam">70</div>
+                                    <div class="dib vam">80</div>
+                                    <div class="dib vam">90</div>
+                                    <div class="dib vam">100</div>
+                                </div>
+                            </div>
+                            <div class="right_side_counter">
+                                <div class="dib vam">$<span id="start_money" data-change-number>70</span></div>
+                            </div>
+                        </div>
+                        <div class="item transactions clearfix">
+                            <div class="left_pos_slider">
+                                <p class="slider_title">The number of profitable trades per day</p>
+                                <div class="the_slider green" data-min="1" data-max="11" data-cur="8"></div>
+                                <div class="slider_scale">
+                                    <div class="dib vam">1</div>
+                                    <div class="dib vam">2</div>
+                                    <div class="dib vam">3</div>
+                                    <div class="dib vam">4</div>
+                                    <div class="dib vam">5</div>
+                                    <div class="dib vam">6</div>
+                                    <div class="dib vam">7</div>
+                                    <div class="dib vam">8</div>
+                                    <div class="dib vam">9</div>
+                                    <div class="dib vam">10</div>
+                                    <div class="dib vam">11</div>
+                                </div>
+                            </div>
+                            <div class="right_side_counter">
+                                <div class="dib vam tac">
+                                    <p id="trades_per_day" data-change-number class="colored">8</p>
+                                    <p class="small_text" data-change-text>trades</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item days_count clearfix">
+                            <div class="left_pos_slider">
+                                <p class="slider_title">The number of trading days</p>
+                                <div class="the_slider yell" data-min="1" data-max="30" data-cur="21"></div>
+                                <div class="slider_scale">
+                                    <div class="dib vam">1</div>
+                                    <div class="dib vam">3</div>
+                                    <div class="dib vam">6</div>
+                                    <div class="dib vam">9</div>
+                                    <div class="dib vam">12</div>
+                                    <div class="dib vam">15</div>
+                                    <div class="dib vam">18</div>
+                                    <div class="dib vam">21</div>
+                                    <div class="dib vam">24</div>
+                                    <div class="dib vam">27</div>
+                                    <div class="dib vam">30</div>
+                                </div>
+                            </div>
+                            <div class="right_side_counter">
+                                <div class="dib vam tac">
+                                    <p id="trade_days" data-change-number class="colored">21</p>
+                                    <p class="small_text" data-change-text>day</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right total_count_block">
+                    <div class="clearfix tac">
+                        <div class="dib vam start_capital">
+                            <div class="dib vam coin_stat">
+                                <div class="gray_coin html_coin"></div>
+                            </div>
+                            <p class="descr">First</p>
+                        </div>
+                        <div class="dib vam final_capital">
+                            <div class="coin_stat dib vam with_end">
+                                <div class="gray_coin html_coin"></div>
+                                <div class="blue_coin html_coin"></div>
+                            </div>
+                            <p class="descr">After</p>
+                        </div>
+                    </div>
+                    <div class="tac">
+                        <p class="total_you_will_get">
+                            You will gain $<span class="final_money" data-total-per-day>2089</span> in one day
+                        </p>
+                        <p class="button_wrap">
+                            <a class="orange_btn" href="#" data-call-questions data-move-to-top>Start Trading</a>
+                        </p>
+                        <p class="starred_descr">Profit is calculated in a view of <br> a trade not higher that USD 200</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="we_transfered">
+            <div class="container">
+                <p class="block_title tac">
+                    <span class="orange_text">In 2015</span> we have paid out to traders <span class="orange_text">$ 2 756 890</span>
+                </p>
+                <div class="units clearfix">
+                    <div class="item">
+                        <p class="icon_wrap"><i class="icon icon-planet"></i></p>
+                        <p class="count_line">47</p>
+                        <p class="text_description one_line">
+                            Countries
+                        </p>
+                    </div>
+                    <div class="item">
+                        <p class="icon_wrap"><i class="icon icon-people"></i></p>
+                        <p class="count_line">28 574</p>
+                        <p class="text_description">
+                            Registered <br> users
+                        </p>
+                    </div>
+                    <div class="item">
+                        <p class="icon_wrap"><i class="icon icon-money"></i></p>
+                        <p class="count_line">$11 760</p>
+                        <p class="text_description">
+                            Our traders <br> gain every day
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="best_traiders">
+            <div class="container">
+                <p class="block_title white_text tac ttu">Best traders</p>
+                <div id="ratingId" class="traiders units ttu" data-trader="TRADER" data-asset="ASSET" data-instrument="INSTRUMENT" data-date="UP-DATE"></div>
+            </div>
+        </div>
+        <div class="traider_rent tac">
+            <div class="container">
+                <div class="traider_rent_wrap">
+                    <p class="ttu">You don’t want to <span class="orange_text">trade yourself</span>, do you?</p>
+                    <p><span class="call_traider_rent_pop orange_btn">Rent a trader!</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="how_to_get_money">
+            <div class="container">
+                <div class="block_content">
+                    <p class="block_title ttu">How to withdraw money</p>
+                    <p class="block_subtitle">Chose preferable withdrawal method. <br>No limits** and no commission*</p>
+                    <div class="clearfix payment_items">
+                        <div class="left">
+                            <p class="payment_wrap">
+                                <img src="images/yandex.jpg" alt="">
+                                <img src="images/web_money.jpg" alt="">
+                                <img src="images/qiwi.jpg" alt="">
+                            </p>
+                            <p class="descr">E commerce</p>
+                        </div>
+                        <div class="right">
+                            <p class="payment_wrap">
+                                <img src="images/visa.jpg" alt="">
+                                <img src="images/mastercard.jpg" alt="">
+                            </p>
+                            <p class="descr">Bank Card</p>
+                        </div>
+                    </div>
+                    <div class="small_description_starred">
+                        <p>*Withdrawal commission — 0%</p>
+                        <p>**No hidden limits to withdraw funds</p>
+                        <p>Our clients receive their money on time and in full</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="container">
+                <p class="tac block_title ttu">F.A.Q.</p>
+                <div class="units faq_units">
+                    <div class="item">
+                        <p class="clickable faq_title">What are Binary options?</p>
+                        <div class="hidden faq_answers">
+                            Binary option is a type of option in which the profit if you make the correct proposition of up or down price movement. The advantage is that you know for sure the exact size of you profit or loss when you enter the trade. Also you do not have to buy underlying asset itself.
+                        </div>
+                    </div>
+                    <div class="item">
+                        <p class="clickable faq_title">What are available assets?</p>
+                        <div class="hidden faq_answers">Whichever asset you choose: currencies, shares, indexes, metals, commodities and etc.</div>
+                    </div>
+
+                    <div class="item">
+                        <p class="clickable faq_title">What is the strike price of an option?</p>
+                        <div class="hidden faq_answers">It is the price where the security can be bought.</div>
+                    </div>
+
+                    <div class="item">
+                        <p class="clickable faq_title">What is the expiration time?</p>
+                        <div class="hidden faq_answers">It is the time, after which the options contract is no longer valid.</div>
+                    </div>
+
+                    <div class="item">
+                        <p class="clickable faq_title">What are CALL and Put Option?</p>
+                        <div class="hidden faq_answers">CALL option is purchased based on the proposition that underlying asset increases in price at the time of expiration. Alternatively Put options counts on the price decrease.</div>
+                    </div>
+
+                    <div class="item">
+                        <p class="clickable faq_title">What is the initial deposit size?</p>
+                        <div class="hidden faq_answers">We suggest starting trading with the demo account on USD 1000 or with the real account with the min deposit of USD 9. We believe that it is the most adequate proposal for the beginners (as an opposite of some offers to start trading with USD 200-250). Of course the professionals may enlarge their account on any amount.</div>
+                    </div>
+
+                    <div class="item">
+                        <p class="clickable faq_title">What is the lowest option price?</p>
+                        <div class="hidden faq_answers">The lowest option price is USD 1 or 30 rubles depending on the currency of the account.</div>
+                    </div>
+
+                    <div class="item">
+                        <p class="clickable faq_title">On what profit can I count?</p>
+                        <div class="hidden faq_answers">
+                            <p>When trading the classic binary options or turbo options your profit is from 60 up to 85-90% of the option rate in case of the correct forecast. The touch option may bring up to 170%. In the hottest trading hours you may count on profit up to 750%.</p>
+                            <p>In case of the incorrect forecast you will lose only your option rate. You can secure your investments in order to lower losses. But in this case the percentage of you profit will be lower. The classical investment rule is applicable here: the lower risk gives lower profit.</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <p class="clickable faq_title">Why do you offer Binary options trading via MetaTrader4?</p>
+                        <div class="hidden faq_answers">
+                            <p>MetaTrader4 gives the best opportunity to predict trend of prices of chosen assets. It is the most serious and successful approach.</p>
+                            <p>MetaTrader4 advantages for trading Forex were highly appreciated by billions of trades all over the world. We made these advantages available for trading Binary Options</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <p class="clickable faq_title">Some companies offer trading Binary Options on-line. Why don’t you?</p>
+                        <div class="hidden faq_answers">See above. Of course online trading is more comfortable as you do have to download and install any programs. However we assume that profit is preferable that comfort. That is why we offer MetaTrader4.</div>
+                    </div>
+
+                    <div class="item">
+                        <p class="clickable faq_title">How do I trade Binary Options?</p>
+                        <div class="hidden faq_answers">
+                            <p>It is very simple. After you have opened account with Larson& Holz, download and install MetaTrader4 and Add-On, then you just need to choose the asset with the particle Bo.</p>
+                            <p>You are welcome to download the detailed instruction together with MT4 or Add- on download</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <p class="clickable faq_title">Do I need any special knowledge to trade Binary Options?</p>
+                        <div class="hidden faq_answers">
+                            <p>Knowledge is required at all times and in all places. The more you know about marketplace trading, especially in trading Binary Opting the better results you will achieve. But in this case the theoretical knowledge equals practical experience. To learn how to trade with benefit you have to trade.</p>
+                            <p>In the meantime MetaTrader4 trading gives a chance to earn profit even to the beginners. If you never use the above platform before please give an up-close look at its functionality. The start with the test trades.</p>
+                            <p>You will find some more recommendations in the next answer.</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <p class="clickable faq_title">What can you advise regarding the trading strategy?</p>
+                        <div class="hidden faq_answers">
+                            <p>All strategies are absolutely individual and very much depend on the personality and trading circumstances ( for example one is trading from time to time and the other is trading permanently). The common denominator of all successful strategy is the accurate analysis and careful forecast.</p>
+                            <p>In case you have some Binary Options Trading experience but still have not developed you own strategy we recommend you to start with tracing the certain asset. For example you can select Apple or Starbucks stocks. Trace their &quot;behavior&quot;, observe trends, make forecasts and trade. This approach will give you stable and significant benefit for a long time.</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <p class="clickable faq_title">What is time period for withdrawal of funds?</p>
+                        <div class="hidden faq_answers">Withdrawal requests are processed within 3 working days.</div>
+                    </div>
+
+                    <div class="item">
+                        <p class="clickable faq_title">Are there documents required for the withdrawal of funds?</p>
+                        <div class="hidden faq_answers">Supporting documents are required for the certain withdrawal methods and amounts. All information will be forwarded via e-mail.</div>
+                    </div>
+
+                    <div class="item">
+                        <p class="clickable faq_title">What is the commission for the replenishment of the account?</p>
+                        <div class="hidden faq_answers">Larson&amp;Holz does not charge any commission for the financial transactions, but the payment systems and aggregator may apply commission.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="videos_block">
+            <div class="container clearfix">
+                <div class="clearfix">
+                    <div class="left">
+                        <p class="tac block_title ttu white">life Story</p>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/HvJVJAPaY9M?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="right">
+                        <p class="tac block_title ttu white">Video instructions</p>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/HbHoufVBPY4?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container clearfix">
+                <div class="dib vat contacts_block left">
+                    <p class="footer_bl_title">Contacts</p>
+                    <div class="bl_content">
+                        <p class="call_us">Call us</p>
+                        <p><a class="phone_link" href="tel:12063742463">+1 206 374-24-63</a></p>
+                    </div>
+                </div>
+                <div class="dib vat footer_about_us left">
+                    <p class="footer_bl_title">About us</p>
+                    <div class="bl_content">
+						<noindex>
+							<p>Group of companies Larson and Holz It Ltd is was founded in 2004 in Basel, Switzerland.</p>
+							<p>The Technical back office with trading servers and data centers are located in Seattle (USA). Nowadays Larson and Holz has the representation offices in London, Budapest, Moscow, Saint-Petersburg, Alma-Ata, Minsk, Vienna, Lima and other cities.</p>
+						    <p>Awards The Best of-line Broker Russia and CIS 2012 by Global Banking and Finance Review Awards, 2012, <a target="_blank" href="https://en.wikipedia.org/wiki/Larson%26Holz">&quot;The Best Broker of 2013&quot;</a> by BEST-BROKER.NAME. Best ECN/STP Broker 2014 by Forex Awards.</p>
+						</noindex>
+                    </div>
+                </div>
+                <div class="dib vat footer_links right">
+                    <p class="footer_bl_title">Links</p>
+                    <ul class="footer_menu">
+                        <li><a target="_blank" href="/">Main page</a></li>
+                        <li><a target="_blank" href="/services_1/">Services</a></li>
+                        <li><a target="_blank" href="/open_an_account_1/">Open an account</a></li>
+                        <li><a target="_blank" href="/bank/RateStreamer/">Mettatrader</a></li>
+                        <li><a target="_blank" href="/partnership_1/">Partnership</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup traider_rent_popup">
+        <div class="close_popup">&#x2716;</div>
+        <div id="bso_form">
+            <div class="you_can_rent">You may connect to any trader and use his strategy in order to obtain the same trading results</div>
+            <form action="/options/send.php" method="POST">
+                <p class="line_input"><input id="userNameId" type="text" placeholder="Name" name="userName"></p>
+                <p class="line_input"><input id="userEmailId" type="text" placeholder="E-mail" name="userEmail"></p>
+                <p class="line_input"><input id="userPhoneId" class="tel_mask" type="text" placeholder="Phone number" name="userPhone"></p>
+                <p class="line_input manager_info">Responsible manager will contact you within a day</p>
+                <p class="tac"><button class="orange_btn" type="submit" name="send">Send request</button></p>
+            </form>
+        </div>
+        <div id="bso_form-submit-success" style="display: none;">
+            <div class="you_can_rent">Your message has been sent</div>
+            <p class="line_input manager_info">Responsible manager will contact you within a day</p>
+        </div>
+    </div>
+
+    <div class="block_up_btn">Up</div>
+
+    <div class="video_block popup" data-popup="sample_popup">
+        <div class="close_popup">&#x2716;</div>
+        <div class="video_content_block">
+            <img src="/ufiles/image/Binary symbol print.jpg" alt="" />
+        </div>
+    </div>
+
+    <div class="video_block popup" data-popup="video_popup">
+        <div class="close_popup">&#x2716;</div>
+        <div class="video_content_block">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/TW5QKcyeJac?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="overlay"></div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery-ui.touch.min.js"></script>
+    <script src="js/input.mask.js"></script>
+    <script src="js/rating.traders.js"></script>
+    <script src="js/feedback.js"></script>
+    <script src="js/custom.js"></script>
+
+    <!-- // <script src="PP/PP.js"></script> -->
+</body>
+</html>

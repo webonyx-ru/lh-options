@@ -165,6 +165,7 @@ $(document).ready(function(){
 
 	$(window).resize(function(){
 		menu_detect()
+		panelBoxMatch();
 	})
 
 	function menu_detect() {
@@ -227,7 +228,9 @@ $(document).ready(function(){
 		bl.closest('.third_lvl_active_element').removeClass('third_lvl_active_element')
 		bl.closest('hide_submenu_elements').removeClass('hide_submenu_elements');
 		$('.header_menu').removeClass('third_lvl_activated')
-	})
+	});
+
+
 
 	menu_header();
 })
@@ -309,4 +312,61 @@ function viewport() {
         e = document.documentElement || document.body;
     }
     return { width : e[ a+'Width' ] , height : e[ a+'Height' ] };
+}
+
+Array.prototype.max = function() {
+	return Math.max.apply(null, this);
+};
+
+Array.prototype.min = function() {
+	return Math.min.apply(null, this);
+};
+
+window.onload = function () {
+	retinaImg(function () {
+		panelBoxMatch();
+	});
+};
+
+function retinaImg(callback) {
+	var images = document.querySelectorAll('[data-retina-img]');
+
+	if(images && images.length > 0) {
+		for (var i = 0; i < images.length; i++) {
+			var image = images[i],
+				currentWidth = image.naturalWidth,
+				parentNodeWidth = image.closest('.' + image.dataset.retinaImg).offsetWidth,
+				halfWidth = currentWidth / 2;
+
+			var width = (halfWidth * 100) / parentNodeWidth;
+
+			image.classList.add('active');
+			image.parentNode.style.width = width + '%';
+		}
+	}
+
+	if(callback) {
+		callback();
+	}
+}
+
+function panelBoxMatch() {
+	var panelBoxes = document.getElementsByClassName('panel-box-match');
+
+	if(panelBoxes && panelBoxes.length > 0) {
+		var panelBoxesArr = [];
+		for(var i=0; i<panelBoxes.length; i++) {
+			var panelBox = panelBoxes[i];
+
+			panelBoxesArr.push(panelBox.clientHeight);
+		}
+
+		var maxHeight = panelBoxesArr.max();
+
+		for(var i=0; i<panelBoxes.length; i++) {
+			var panelBox = panelBoxes[i];
+
+			panelBox.style.height = maxHeight + 'px';
+		};
+	}
 }

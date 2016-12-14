@@ -440,7 +440,7 @@ form .line_input.manager_info { margin: 20px 0; }
 .menu_icon { position: absolute; top: 100%; display: block; border-radius: 50%; background: #0e2f5f; width: 30px; height: 30px; margin-top: -15px; left: 50%; margin-left: -15px; cursor: pointer; }
 .menu_icon:after { display: block; content: ""; position: absolute; top: 50%; left: 50%; border: 4px solid transparent; border-top: 4px solid #fff; margin-left: -4px; margin-top: 3px; }
 
-.platforms { padding: 80px 0 66px 0; }
+.platforms { padding: 80px 0 66px 0; background-color: #f7f7f7;}
 
 .platforms .platforms-grid {
     font-size: 0;
@@ -486,10 +486,6 @@ form .line_input.manager_info { margin: 20px 0; }
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    -o-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
@@ -506,22 +502,26 @@ form .line_input.manager_info { margin: 20px 0; }
 
 .panel .panel-btn.panel-btn-orange {
     background: #ff7c00;
-    box-shadow: 2px 2px 0 #d96a00;
+    border-bottom: 2px solid #d96a00;
+    border-right: 2px solid #d96a00;
 }
 
 .panel .panel-btn.panel-btn-orange:hover {
     border: none;
-    box-shadow: -2px -2px #d96a00;
+    border-top: 2px solid #d96a00;
+    border-left: 2px solid #d96a00;
 }
 
 .panel .panel-btn.panel-btn-blue {
     background: #3E92D0;
-    box-shadow: 2px 2px 0 #3E92D0;
+    border-right: 2px solid #3877A8;
+    border-bottom: 2px solid #3878A8;
 }
 
 .panel .panel-btn.panel-btn-blue:hover {
     border: none;
-    box-shadow: -2px -2px #3E92D0;
+    border-left: 2px solid #3877A8;
+    border-top: 2px solid #3878A8;
 }
 
 .panel .panel-form .panel-input {
@@ -545,12 +545,25 @@ form .line_input.manager_info { margin: 20px 0; }
     margin: 0 0 10px 0;
 }
 
+.panel .panel-form .panel-input::-moz-placeholder {
+    color: #333333;
+    opacity: 1;
+}
+.panel .panel-form .panel-input::-webkit-input-placeholder {
+    color: #333333;
+    opacity: 1;
+}
+.panel .panel-form .panel-input::-ms-input-placeholder {
+    color: #333333;
+    opacity: 1;
+}
+
 .panel .panel-title {
     font-size: 30px;
     line-height: 1.43;
     text-align: center;
     color: #222222;
-    font-family: rb, serif;
+    font-family: robotoMed, serif;
     margin: 0 0 10px 0;
 }
 

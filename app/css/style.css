@@ -380,7 +380,7 @@ form .line_input { margin-bottom: 10px; }
 .blue_btn_q.empty:hover { color: #fff; background: #3E92D0; border: 2px solid #3E92D0; }
 .blue_btn_q:hover { border: none; border-top: 2px solid #357BAE; border-left: 2px solid #357BAE; }
 
-.orange_btn_q { background: #ff7c00; border-right: 2px solid #50ad1a; border-bottom: 2px solid #50ad1a; padding: 0 10px; line-height: 46px; text-transform: uppercase; color: #fff; font-family: rb; display: inline-block; vertical-align: middle; border-radius: 3px; text-decoration: none; cursor: pointer; }
+.orange_btn_q { background: #ff7c00; border-bottom: 2px solid #d96a00; border-right: 2px solid #d96a00; padding: 0 10px; line-height: 46px; text-transform: uppercase; color: #fff; font-family: rb; display: inline-block; vertical-align: middle; border-radius: 3px; text-decoration: none; cursor: pointer; }
 .orange_btn_q:hover { border: none; border-top: 2px solid #d96a00; border-left: 2px solid #d96a00; }
 
 

@@ -441,7 +441,7 @@
                                     <div>
                                         <input type="text" name="phone" class="tel_mask panel-input" placeholder="Введите номер телефона">
                                     </div>
-                                    <button class="panel-btn panel-btn-blue" type="submit">Получить ссылку</button>
+                                    <button data-call-popup="thanks_popup" class="panel-btn panel-btn-blue" type="submit">Получить ссылку</button>
                                 </form>
                             </footer>
                         </article>
@@ -834,6 +834,25 @@
         <div class="close_popup">&#x2716;</div>
         <div class="video_content_block">
             <img src="/ufiles/image/Binary symbol print.jpg" alt="" />
+        </div>
+    </div>
+
+    <div class="thanks_block popup tac" data-popup="thanks_popup">
+        <div class="close_popup">&#x2716;</div>
+        <div class="thanks_block-content">
+            <p><img class="thanks_block-icon" src="images/svg/icon-check.svg" alt=""></p>
+            <p class="thanks__title">Ссылка отправлена в смс-сообщении</p>
+            <p class="thanks__content">Чтобы скачать мобильное приложение — перейдите по ссылке <br>
+                в смс-сообщении, которое мы отправили на номер:</p>
+            <p class="thanks__phone-number">+7 (928) 678-56-78</p>
+            <p class="thanks__form-title">Указать другой номер телефона</p>
+            <form action="" class="panel-form">
+                <div>
+                    <input type="text" name="phone" class="tel_mask panel-input" placeholder="Введите номер телефона">
+                </div>
+                <button data-call-popup="thanks_popup" class="panel-btn panel-btn-blue" type="submit">Получить ссылку
+                </button>
+            </form>
         </div>
     </div>
 
